@@ -1,7 +1,0 @@
-import random
-l=10
-listrandom=[]
-for i in range (l):
-    value=random.randint(0,l)
-    listrandom.append(value)
-print (listrandom)
