@@ -1,9 +1,4 @@
 import os
  
-os.rmdir("path1")
-os.rmdir("path2")
-os.rmdir("path3")
-os.rmdir("path4")
-os.rmdir("path5")
-os.rmdir("path6")
-os.rmdir("path7")
+path = r'C:\Users\2\Documents\pytest\2018\10\22'
+os.makedirs(path)
