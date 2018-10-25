@@ -1,12 +1,6 @@
 # Удовиченко
-class Figure:
-    def __init__(self, color):
-        self.color = color
-    def get_color(self):
-        return self.color       
 
-
-class triangle(Figure):
+class triangle:
     def __init__(self, color = "blue", a = 3, b = 4, c = 5):
             self.color = color
             self.a = a
