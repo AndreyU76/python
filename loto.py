@@ -10,7 +10,7 @@ class Cask:
         lst = [x for x in range(1, self.amount + 1)]
         random.shuffle(lst)
         for i, y in enumerate(lst):
-            print('{:*^30}'.format('*'))
+            print('{:-^25}'.format('-'))
             print('Новый бочонок: {} (осталось {})'.format(y, self.amount - (i+1)))
             yield y
 
