@@ -21,7 +21,7 @@ class Cask:
 
 
 class Loto:
-    #Нарезаем карточки
+    #делаем карточки
     def __set_card(self):
         num = set()
         while len(num) < self.all_row * 5:
@@ -60,7 +60,7 @@ class Loto:
                 card_player[i][n.index(num_cask)] = '-'
                 self.score += 1
                 if self.score == 15:
-                    print('{} Победила!'.format(self.name))
+                    print('{} Победил !!!'.format(self.name))
                     sys.exit(1)
                 return True
         return False
@@ -80,8 +80,8 @@ def main():
 
     game = Loto(2)
     cask = Cask(90)
-    player1 = Player('Ваша карточка')
-    player2 = Player('Карточка компьютера')
+    player1 = Player('Игрок')
+    player2 = Player('Компьютер')
 
     while True:
         num_cask = next(cask.gen)
@@ -105,10 +105,6 @@ def main():
             print('Введите y or n')
             time.sleep(1)
             continue
-
-    
-  
-
 
 if __name__ == '__main__':
     main()
