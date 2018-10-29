@@ -93,11 +93,11 @@ def main():
             if player1.search(game.card_user, num_cask):
                 continue
             else:
-                print('Game Over')
+                print('Конец Игры')
                 sys.exit(1)
         if inp_user == 'n':
             if player1.search(game.card_user, num_cask):
-                print('Game Over')
+                print('Конец Игры')
                 sys.exit(1)
             elif player2.search(game.card_comp, num_cask):
                 continue
