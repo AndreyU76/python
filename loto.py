@@ -24,7 +24,7 @@ class Loto:
     #делаем карточки
     def __set_card(self):
         num = set()
-        while len(num) < self.all_row * 5:
+        while len(num) < self.all_row * 8:
             num.add(random.randint(1, 91))
         cards = list(num)
         random.shuffle(cards)
@@ -101,8 +101,8 @@ def main():
                 sys.exit(1)
             elif player2.search(game.card_comp, num_cask):
                 continue
-        if inp_user != 'n' and inp_user != 'y':
-            print('Введите y or n')
+        if inp_user != 'N' and inp_user != 'Y':
+            print('Введите Y or N')
             time.sleep(1)
             continue
 
