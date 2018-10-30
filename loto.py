@@ -57,7 +57,7 @@ class Loto:
     def search(self, card_player, num_cask):
         for i, n in enumerate(card_player):
             if num_cask in n:
-                card_player[i][n.index(num_cask)] = '-'
+                card_player[i][n.index(num_cask)] = 'X'
                 self.score += 1
                 if self.score == 15:
                     print('{} Победил !!!'.format(self.name))
