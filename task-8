@@ -1,10 +1,10 @@
 year = int(input())
 if year % 4 != 0:
-    print("usual year")
+    print("не високосный год")
 elif year % 100 == 0:
     if year % 400 == 0:
-        print("intercalary year")
+        print("високосный год")
     else:
-        print("usual year")
+        print("не високосный год")
 else:
-    print("intercalary year")
+    print("високосный год")
