@@ -1,4 +1,4 @@
-year = int(input())
+year = int(input("введи год: "))
 if year % 4 != 0:
     print("не високосный год")
 elif year % 100 == 0:
